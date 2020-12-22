@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/Mojtabarezaei4/1200Kvadrat-InOfficiell#readme",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mongoose": "^5.11.8",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.6"
   }
 }
