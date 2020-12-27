@@ -18,5 +18,21 @@ app.set('view engine', 'ejs')
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
 })
+app.get('/friditisgarden', (req, res) => {
+    res.sendFile(__dirname + '/views/Fritidsgarden.html')
+})
+app.get('/verksamheter', (req, res) => {
+    res.sendFile(__dirname + '/views/Verksamheter.html')
+})
+app.get('/omoss', (req, res) => {
+    res.sendFile(__dirname + '/views/Om-oss.html')
+})
+app.get('/bokalokal', (req, res) => {
+    res.sendFile(__dirname + '/views/Boka-lokal.html')
+})
+app.get('/profil', (req, res) => {
+    res.sendFile(__dirname + '/views/Profil.html')
+})
+
 
 app.listen(port, () => console.log(`Listening on port ${port}`))
