@@ -230,6 +230,40 @@ header .navigation li a{
     }
 }
 
+//Personals section
+#personals{
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    #images{
+        width: 10%;
+        justify-items: center;
+        text-align: center;
+        img{
+            width: 75%;
+            border-radius: 50%;
+        }
+        h4{
+            margin-top: 20px;
+        }
+    }
+}
+
+// Information section
+#information{
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+
+// The map
+#the-map{
+    width: 100%;
+}
+
 // footer
 footer{
     position: relative;

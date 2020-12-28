@@ -479,6 +479,45 @@ header .navigation li a {
   background-size: cover;
 }
 
+#personals {
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#personals #images {
+  width: 10%;
+  justify-items: center;
+  text-align: center;
+}
+
+#personals #images img {
+  width: 75%;
+  border-radius: 50%;
+}
+
+#personals #images h4 {
+  margin-top: 20px;
+}
+
+#information {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#the-map {
+  width: 100%;
+}
+
 footer {
   position: relative;
   width: 100%;
