@@ -55,6 +55,8 @@ header .navigation li a{
 
 // Container/Body
 .container{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -155,95 +157,77 @@ header .navigation li a{
     align-items: center;
     margin-bottom: 5%;
     a{
-        position: relative;
-        display: inline-block;
-        padding: 10px 30px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: rgb(235, 131, 71);
-        font-size: 20px;
-        margin: 10px;
-        letter-spacing: 2px;
+        @include aButtonStyle();
     }
     a:hover{
-        background: rgb(235, 131, 71);
-        color: $primaryBG;
-        transition:0.5s;
-        transition-delay: 1s;
+        @include aButtonStyleHover();
     }
     a span{
-        position: absolute;
-        display: block;
-        background: rgb(235, 131, 71);
+        @include aButtonStyleSpan();
     }
     a span:nth-child(1){
-        left: 0;
-        bottom: 0;
-        width: 1px;
-        height: 100%;
-        transform: scaleY(0);
-        transform-origin: top;
-        transition: transform 0.25s;
-
+        @include aButtonStyleSpanFirstChild();
     }
     a:hover span:nth-child(1){
-        
-        transform: scaleY(1);
-        transform-origin: bottom;
-        transition: transform 0.25s;
+        @include aButtonStyleFirstChildHover();        
     }
     a span:nth-child(2){
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 1px;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.25s;
-        transition-delay: 0.25s;
+        @include aButtonStyleSpanSecondChild();
     }
     a:hover span:nth-child(2){
-        
-        transform: scaleY(1);
-        transform-origin: left;
-        transition: transform 0.25s;
-        transition-delay: 0.25s;
+        @include aButtonStyleSecondChildHover();
     }
     a span:nth-child(3){
-        right: 0;
-        bottom: 0;
-        width: 1px;
-        height: 100%;
-        transform: scaleY(0);
-        transform-origin: bottom;
-        transition: transform 0.25s;
-        transition-delay: 0.5s;
+        @include aButtonStyleSpanThirdChild();
     }
     a:hover span:nth-child(3){
-        
-        transform: scaleY(1);
-        transform-origin: top;
-        transition: transform 0.25s;
-        transition-delay: 0.5s;
+        @include aButtonStyleThirdChildHover();
     }
     a span:nth-child(4){
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 1px;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.25s;
-        transition-delay: 0.75s;
+        @include aButtonStyleSpanFourthChild();
     }
     a:hover span:nth-child(4){
-        
-        transform: scaleY(1);
-        transform-origin: right;
-        transition: transform 0.25s;
-        transition-delay: 0.75s;
+        @include aButtonStyleFourthChildHover();
     }
 
+}
+
+// Container-verksamheter/body
+#the-first-row{
+    @include verksamheterRows();
+    #the-text{
+        @include theTextVerksamheter();
+    }
+    #the-image{
+        @include theImageVerksamheter();
+    }
+}
+#the-second-row{
+    @include verksamheterRows();
+    #the-text{
+        @include theTextVerksamheter();
+    }
+    #the-image{
+        @include theImageVerksamheter();
+    }
+}
+#the-third-row{
+    @include verksamheterRows();
+    #the-text{
+        @include theTextVerksamheter();
+    }
+    #the-image{
+        @include theImageVerksamheter();
+    }
+}
+#the-fourth-row{
+    @include verksamheterRows();
+    #the-text{
+        @include theTextVerksamheter();
+    }
+    #the-image{
+        @include theImageVerksamheter();
+    }
 }
 
 // footer

@@ -1,0 +1,108 @@
+@mixin aButtonStyle() {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(235, 131, 71);
+    font-size: 20px;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+@mixin aButtonStyleHover() {
+    background: rgb(235, 131, 71);
+    color: $primaryBG;
+    transition:0.5s;
+    transition-delay: 1s;
+}
+@mixin aButtonStyleSpan() {
+    position: absolute;
+    display: block;
+    background: rgb(235, 131, 71);
+}
+@mixin aButtonStyleSpanFirstChild() {
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.25s;
+}
+@mixin aButtonStyleFirstChildHover() {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.25s;
+}
+@mixin aButtonStyleSpanSecondChild() {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s;
+    transition-delay: 0.25s;
+}
+@mixin aButtonStyleSecondChildHover() {
+    transform: scaleY(1);
+    transform-origin: left;
+    transition: transform 0.25s;
+    transition-delay: 0.25s;
+}
+@mixin aButtonStyleSpanThirdChild() {
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.25s;
+    transition-delay: 0.5s;
+}
+@mixin aButtonStyleThirdChildHover() {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.25s;
+    transition-delay: 0.5s;    
+}
+@mixin aButtonStyleSpanFourthChild() {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s;
+    transition-delay: 0.75s;
+}
+@mixin aButtonStyleFourthChildHover() {
+    transform: scaleY(1);
+    transform-origin: right;
+    transition: transform 0.25s;
+    transition-delay: 0.75s;
+}
+
+@mixin verksamheterRows() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 24rem;
+}
+
+@mixin theTextVerksamheter() {
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 35%;
+}
+
+@mixin theImageVerksamheter() {
+    position: relative;
+    top: 2%;
+    width: 50%;
+    background-size: cover;
+}
