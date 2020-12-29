@@ -256,11 +256,110 @@ header .navigation li a{
 #information{
     width: 100%;
     margin-bottom: 2rem;
-    
+    #the-text{
+        top: -5%;
+        margin: auto;
+        width: 50%;
+    }
+}
+
+#contact-us{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    #the-first-row{
+        justify-content: space-between;
+    }
+    #the-text{
+        top: -25%;
+        margin: auto;
+        width: 50%;
+    }
+    #the-form-section{
+        width: 50%;
+    }
+    #the-form{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        #form{
+            width: 70%;
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            #name-input{
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            #email-input{
+                margin-bottom: 20px;
+            }
+            #message-input{
+                margin-bottom: 20px;
+            }
+            input{
+                @include input();
+            }
+            label{
+                @include label();
+            }
+            label::after{
+                @include labelAfter();
+            }
+            #content-name{
+                @include content();
+            }
+            #content-email{
+                @include content();
+            }
+            #content-message{
+                @include content();
+            }
+            // For the name-input
+            input:focus + #label-name #content-name, 
+            input:valid + #label-name #content-name{
+                transform: translateY(-150%);
+                font-size: 16px;
+                color: rgb(235, 131, 71);
+            }
+            input:focus + #label-name::after, 
+            input:valid + #label-name::after{
+                transform: translateX(0%);
+            }
+            // For the email-input
+            input:focus + #label-email #content-email, 
+            input:valid + #label-email #content-email{
+                transform: translateY(-150%);
+                font-size: 16px;
+                color: rgb(235, 131, 71);
+            }
+            input:focus + #label-email::after, 
+            input:valid + #label-email::after{
+                transform: translateX(0%);
+            }
+            // For the message-input
+            input:focus + #label-message #content-message, 
+            input:valid + #label-message #content-message{
+                transform: translateY(-150%);
+                font-size: 16px;
+                color: rgb(235, 131, 71);
+            }
+            input:focus + #label-message::after, 
+            input:valid + #label-message::after{
+                transform: translateX(0%);
+            }
+        }
+    }
 }
 
 // The map
 #the-map{
+    margin-top: 2%;
     width: 100%;
 }
 

@@ -103,33 +103,47 @@
         </div>
         <div id="contact-us">
             <div id="the-first-row">
-                <div id="the-image">
-                    <form action="#">
-                        <label for="name">Namn:</label><br>
-                        <input type="text" id="name" name="name"><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="meddelande">Meddelande:</label><br>
-                        <input type="text" id="meddelande" name="meddelande">
-                    </form>
-                </div>
-                <div id="navigaion-buttons">
-                    <a href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        skicka
-                    </a>
-                </div>
                 <div id="the-text">
                     <h1>Kontakta oss</h1>
                     <h3>Vi du arrangagera ett evenemang eller har du någon idé om
                         något gällande 1200 Kvadrat? Var god och kontakta oss så tar vi
                         det vidare.
                     </h3>
-                    
                 </div>
+                <div id="the-form-section">
+                    <div id="the-form">
+                        <form id="form" action="#">
+                            <div id="name-input">
+                                <input type="text" name="name" autocomplete="off" required/>
+                                <label for="name" id="label-name">
+                                    <span id="content-name">Name</span>
+                                </label>
+                            </div>
+                            <div id="email-input">
+                                <input type="email" name="email" autocomplete="off" required/>
+                                <label for="email" id="label-email">
+                                    <span id="content-email">Email</span>
+                                </label>
+                            </div>
+                            <div id="message-input">
+                                <input type="text" name="message" autocomplete="off" required/>
+                                <label for="message" id="label-message">
+                                    <span id="content-message">Medelande</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="navigaion-buttons">
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            skicka
+                        </a>
+                    </div>
+                </div>
+                
             </div>
         </div>
         <div id="the-map">
