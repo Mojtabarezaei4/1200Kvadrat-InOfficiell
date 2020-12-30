@@ -11,9 +11,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -22,16 +19,21 @@ header {
 }
 
 header .logo {
+  width: 30%;
   margin-left: 100px;
 }
 
 header .navigation {
+  width: 70%;
   position: relative;
-  -webkit-transform: translateX(-30%);
-          transform: translateX(-30%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-left: 10%;
+  padding-right: 10px;
 }
 
 header .navigation li {
