@@ -108,6 +108,7 @@
 }
 
 @mixin input() {
+    background-color: transparent;
     width: 100%;
     height: 100%;
     color: #595f6e;
@@ -118,12 +119,12 @@
 }
 @mixin label() {
     position: relative;
-    bottom: 0%;
+    bottom: 0px;
     left: 0%;
     width: 100%;
     height: 100%;
     pointer-events: none;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
 }
 @mixin labelAfter() {
     content: "";

@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: sans-serif;
 }
 
 header {
@@ -511,7 +512,12 @@ header .navigation li a {
 
 #information {
   width: 100%;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+#information #the-first-row {
+  background-color: rgba(56, 146, 142, 0.376);
 }
 
 #information #the-text {
@@ -535,16 +541,26 @@ header .navigation li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: rgba(56, 146, 142, 0.376);
 }
 
 #contact-us #the-text {
-  top: -25%;
+  margin: auto;
+  width: 50%;
+}
+
+#contact-us #the-text h1 {
+  margin-bottom: 10px;
+}
+
+#contact-us #the-text h3 {
   margin: auto;
   width: 50%;
 }
 
 #contact-us #the-form-section {
   width: 50%;
+  margin: auto;
 }
 
 #contact-us #the-form {
@@ -566,7 +582,6 @@ header .navigation li a {
   width: 70%;
   position: relative;
   height: 100%;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,10 +594,11 @@ header .navigation li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 #contact-us #the-form #form #name-input {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -595,6 +611,7 @@ header .navigation li a {
 }
 
 #contact-us #the-form #form input {
+  background-color: transparent;
   width: 100%;
   height: 100%;
   color: #595f6e;
@@ -606,12 +623,12 @@ header .navigation li a {
 
 #contact-us #the-form #form label {
   position: relative;
-  bottom: 0%;
+  bottom: 0px;
   left: 0%;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
 }
 
 #contact-us #the-form #form label::after {
@@ -697,7 +714,6 @@ header .navigation li a {
 }
 
 #the-map {
-  margin-top: 2%;
   width: 100%;
 }
 
@@ -705,6 +721,15 @@ footer {
   position: relative;
   width: 100%;
   background-color: #38928e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+footer .footer-content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,8 +740,82 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+}
+
+footer .footer-content #tolvhundra-gbg-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin: auto;
+  width: 50%;
+}
+
+footer .footer-content #tolvhundra-gbg-logo #tolvhundra-logo {
+  width: 100px;
+}
+
+footer .footer-content #tolvhundra-gbg-logo #tolvhundra-logo img {
+  width: 50px;
+}
+
+footer .footer-content #tolvhundra-gbg-logo #gbg-logo {
+  width: 100px;
+}
+
+footer .footer-content #tolvhundra-gbg-logo #gbg-logo img {
+  padding-top: 11%;
+  width: 100px;
+}
+
+footer .footer-content #social-media-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin: auto;
+  width: 60%;
+}
+
+footer .footer-content #social-media-logos #facebook-logo {
+  width: 100px;
+  margin-right: -50px;
+}
+
+footer .footer-content #social-media-logos #facebook-logo img {
+  width: 30px;
+}
+
+footer .footer-content #social-media-logos #instagram-logo {
+  width: 100px;
+}
+
+footer .footer-content #social-media-logos #instagram-logo img {
+  width: 30px;
+}
+
+footer .footer-content #social-media-logos #youtube-logo {
+  width: 100px;
+  margin-left: -50px;
+}
+
+footer .footer-content #social-media-logos #youtube-logo img {
+  margin-top: -5px;
+  width: 40px;
 }
 
 footer h3 {
