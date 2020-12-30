@@ -216,6 +216,7 @@ header{
     @include verksamheterRows();
     #the-text{
         @include theTextVerksamheter();
+        
     }
     #the-image{
         @include theImageVerksamheter();

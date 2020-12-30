@@ -375,14 +375,15 @@ header .navigation li a {
 #the-first-row #the-text {
   position: relative;
   width: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
-  top: 35%;
+  margin: auto;
+  top: 0;
+}
+
+#the-first-row #the-text h3 {
+  margin: auto;
+  margin-top: 2%;
+  width: 50%;
 }
 
 #the-first-row #the-image {
@@ -390,6 +391,11 @@ header .navigation li a {
   top: 2%;
   width: 50%;
   background-size: cover;
+  height: 100%;
+}
+
+#the-first-row #the-image img {
+  width: 100%;
 }
 
 #the-second-row {
@@ -410,14 +416,15 @@ header .navigation li a {
 #the-second-row #the-text {
   position: relative;
   width: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
-  top: 35%;
+  margin: auto;
+  top: 0;
+}
+
+#the-second-row #the-text h3 {
+  margin: auto;
+  margin-top: 2%;
+  width: 50%;
 }
 
 #the-second-row #the-image {
@@ -425,6 +432,11 @@ header .navigation li a {
   top: 2%;
   width: 50%;
   background-size: cover;
+  height: 100%;
+}
+
+#the-second-row #the-image img {
+  width: 100%;
 }
 
 #the-third-row {
@@ -445,14 +457,15 @@ header .navigation li a {
 #the-third-row #the-text {
   position: relative;
   width: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
-  top: 35%;
+  margin: auto;
+  top: 0;
+}
+
+#the-third-row #the-text h3 {
+  margin: auto;
+  margin-top: 2%;
+  width: 50%;
 }
 
 #the-third-row #the-image {
@@ -460,6 +473,11 @@ header .navigation li a {
   top: 2%;
   width: 50%;
   background-size: cover;
+  height: 100%;
+}
+
+#the-third-row #the-image img {
+  width: 100%;
 }
 
 #the-fourth-row {
@@ -480,14 +498,15 @@ header .navigation li a {
 #the-fourth-row #the-text {
   position: relative;
   width: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
-  top: 35%;
+  margin: auto;
+  top: 0;
+}
+
+#the-fourth-row #the-text h3 {
+  margin: auto;
+  margin-top: 2%;
+  width: 50%;
 }
 
 #the-fourth-row #the-image {
@@ -495,6 +514,11 @@ header .navigation li a {
   top: 2%;
   width: 50%;
   background-size: cover;
+  height: 100%;
+}
+
+#the-fourth-row #the-image img {
+  width: 100%;
 }
 
 #personals {
