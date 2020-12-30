@@ -535,10 +535,6 @@ header .navigation li a {
   margin-bottom: 2rem;
 }
 
-#information #the-first-row {
-  background-color: rgba(56, 146, 142, 0.376);
-}
-
 #information #the-text {
   top: 0;
   margin: auto;
@@ -554,8 +550,20 @@ header .navigation li a {
   width: 50%;
 }
 
-#information #the-image {
+#information #the-text-image {
   top: 0;
+  width: 50%;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+#information #the-text-image h1 {
+  color: rgba(255, 0, 0, 0.678);
+  font-size: 60px;
 }
 
 #contact-us {

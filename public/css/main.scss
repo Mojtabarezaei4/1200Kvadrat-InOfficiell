@@ -278,9 +278,6 @@ header{
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    #the-first-row{
-        background-color: $primaryBGOpacity;
-    }
     #the-text{
         top: 0;
         margin: auto;
@@ -293,8 +290,17 @@ header{
             width: 50%;
         }
     }
-    #the-image{
+    #the-text-image{
         top: 0;
+        width: 50%;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        h1{
+            color: rgba(255, 0, 0, 0.678);
+            font-size: 60px;
+        }
     }
 }
 
