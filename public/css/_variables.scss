@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Gravity;
+    src: url(../fonts/gravity/Gravity-Light.otf);
+}
 $primaryBG: rgb(56, 146, 142);
 $primaryBGOpacity: rgba(56, 146, 142, 0.376);
 $textColor: rgb(58, 58, 58);
+$mainFont: Gravity;

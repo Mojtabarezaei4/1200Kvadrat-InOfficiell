@@ -1,6 +1,11 @@
+@font-face {
+  font-family: Gravity;
+  src: url(../fonts/gravity/Gravity-Light.otf);
+}
+
 * {
   margin: 0;
-  font-family: sans-serif;
+  font-family: Gravity;
 }
 
 body {
@@ -779,6 +784,197 @@ header .navigation li a {
 
 #the-map {
   width: 100%;
+}
+
+#the-person-info {
+  top: 0;
+  padding-top: 5%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#the-person-info #name-email {
+  position: relative;
+  margin-left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#the-person-info #name-email #name-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#the-person-info #name-email #name-section #name-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+#the-person-info #name-email #name-section #name-title a {
+  margin-left: 20px;
+  color: #eb8347;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#the-person-info #name-email #name-section #name-title h4 {
+  color: #595f6e;
+}
+
+#the-person-info #name-email #email-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+#the-person-info #name-email #email-section #email-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+#the-person-info #name-email #email-section #email-title a {
+  margin-left: 20px;
+  color: #eb8347;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#the-person-info #name-email #email-section #email-title h4 {
+  color: #595f6e;
+}
+
+#the-person-info #the-person-image {
+  top: 0;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+}
+
+#the-person-info #the-person-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#the-person-info #the-person-image a {
+  color: #eb8347;
+  font-size: 12px;
+  margin-top: 00.5rem;
+  margin-left: 25%;
+  text-decoration: none;
+}
+
+#activation-list {
+  width: 60%;
+  margin-left: 20%;
+}
+
+#activation-list #chech-box-list {
+  margin-top: 2rem;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 10%;
+}
+
+#the-logg {
+  margin-top: 5%;
+  width: 60%;
+  height: 60vh;
+  margin-left: 20%;
+}
+
+#the-logg #the-logg-list {
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 146, 142, 0.376);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2%;
+}
+
+#the-logg #the-logg-list #the-date {
+  width: 50%;
+  margin-left: 10%;
+}
+
+#the-logg #the-logg-list #the-date h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#the-logg #the-logg-list #the-date h5 {
+  margin-bottom: 10px;
+}
+
+#the-logg #the-logg-list #the-local {
+  width: 20%;
+  margin-right: 10%;
+}
+
+#the-logg #the-logg-list #the-local h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#the-logg #the-logg-list #the-local h5 {
+  margin-bottom: 10px;
 }
 
 footer {
