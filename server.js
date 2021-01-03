@@ -33,6 +33,12 @@ app.get('/bokalokal', (req, res) => {
 app.get('/profil', (req, res) => {
     res.sendFile(__dirname + '/views/Profil.html')
 })
+app.get('/loggain', (req, res) => {
+    res.sendFile(__dirname + '/views/Login.html')
+})
+app.get('/regler', (req, res) => {
+    res.sendFile(__dirname + '/views/Rules.html')
+})
 
 
 app.listen(port, () => console.log(`Listening on port ${port}`))
