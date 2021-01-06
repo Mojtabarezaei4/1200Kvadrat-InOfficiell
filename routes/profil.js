@@ -1,10 +1,15 @@
 const express = require('express')
 const router = express.Router()
 
-var name = "Johan"
+var name = ""
 
 router.get('/', (req, res) => {
-    res.render('profil/PersonalProfil', {name : name})
+    if(name == null || name == ""){
+        res.render('login/login')
+    }
+    else{
+        res.render('profil/PersonalProfil', {name : name})
+    }
 })
 
 module.exports = router

@@ -363,6 +363,152 @@ header .navigation li a {
           transition-delay: 0.75s;
 }
 
+#navigaion-buttons button {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eb8347;
+  font-size: 20px;
+  margin: 10px;
+  letter-spacing: 2px;
+}
+
+#navigaion-buttons button:hover {
+  background: #eb8347;
+  color: #38928e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  font-weight: bold;
+}
+
+#navigaion-buttons button span {
+  position: absolute;
+  display: block;
+  background: #eb8347;
+}
+
+#navigaion-buttons button span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+#navigaion-buttons button:hover span:nth-child(1) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+#navigaion-buttons button span:nth-child(2) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+#navigaion-buttons button:hover span:nth-child(2) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+#navigaion-buttons button span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+#navigaion-buttons button:hover span:nth-child(3) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+#navigaion-buttons button span:nth-child(4) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+#navigaion-buttons button:hover span:nth-child(4) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
 #the-first-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1467,6 +1613,14 @@ header .navigation li a {
   width: 50%;
   text-align: center;
   margin: auto;
+}
+
+#log-in #login-as-personal #personal-login-link {
+  font-size: 12px;
+}
+
+#log-in #login-as-personal #personal-login-link:hover {
+  background-color: transparent;
 }
 
 #rules {
