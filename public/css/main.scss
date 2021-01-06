@@ -589,6 +589,88 @@ header{
     }
 }
 
+// The form for add a member
+#the-additional-form{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 8%;
+    h2{
+        margin-left: 0;
+        text-align: left;
+        margin-bottom: 2%;
+    }
+    #form{
+        width: 70%;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        #name-input{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #email-input{
+            margin-bottom: 20px;
+        }
+        #usernumber-input{
+            margin-bottom: 20px;
+        }
+        input{
+            @include input();
+        }
+        label{
+            @include label();
+        }
+        label::after{
+            @include labelAfter();
+        }
+        #content-name{
+            @include content();
+        }
+        #content-email{
+            @include content();
+        }
+        #content-usernumber{
+            @include content();
+        }
+        // For the name-input
+        input:focus + #label-name #content-name, 
+        input:valid + #label-name #content-name{
+            transform: translateY(-150%);
+            font-size: 16px;
+            color: rgb(235, 131, 71);
+        }
+        input:focus + #label-name::after, 
+        input:valid + #label-name::after{
+            transform: translateX(0%);
+        }
+        // For the email-input
+        input:focus + #label-email #content-email, 
+        input:valid + #label-email #content-email{
+            transform: translateY(-150%);
+            font-size: 16px;
+            color: rgb(235, 131, 71);
+        }
+        input:focus + #label-email::after, 
+        input:valid + #label-email::after{
+            transform: translateX(0%);
+        }
+        // For the message-input
+        input:focus + #label-usernumber #content-usernumber, 
+        input:valid + #label-usernumber #content-usernumber{
+            transform: translateY(-150%);
+            font-size: 16px;
+            color: rgb(235, 131, 71);
+        }
+        input:focus + #label-usernumber::after, 
+        input:valid + #label-usernumber::after{
+            transform: translateX(0%);
+        }
+    }
+}
 // Login page
 #log-in{
     display: flex;
@@ -668,6 +750,14 @@ header{
             input:valid + #label-password::after{
                 transform: translateX(0%);
             }
+        }
+    }
+    #login-as-personal{
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        a{
+            
         }
     }
 }

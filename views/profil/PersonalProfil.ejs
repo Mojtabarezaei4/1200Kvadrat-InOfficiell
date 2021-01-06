@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Profil</title>
+    <title>Personal Profil</title>
 </head>
 <body>
     <header>
@@ -48,48 +48,34 @@
                 <a href="#">Välj en bild</a>
             </div>
         </div>
-        <div id="activation-list">
-            <h2>Aktiv i</h2>
-            <form action="" id="chech-box-list">
-                <div id="dans">
-                    <input type="checkbox" id="dans-checkbox" name="dans" value="Dans">
-                    <label for="dans">Dans</label>
-                </div>
-                <div id="studio">
-                    <input type="checkbox" id="studio-checkbox" name="studio" value="Studio">
-                    <label for="studio">Studio</label>
-                </div>
-                <div id="Media">
-                    <input type="checkbox" id="media-checkbox" name="media" value="Media">
-                    <label for="media">Media</label>
-                </div>
-                <div id="fritidsgarden">
-                    <input type="checkbox" id="dafritidsgardenns-checkbox" name="fritidsgarden" value="Fritidsgarden">
-                    <label for="fritidsgarden">Fritidsgården</label>
-                </div>
-            </form>
-        </div>
-        <div id="the-logg">
-            <h2>Bokade lokaler</h2>
-            <div id="the-logg-list">
-                <div id="the-date">
-                    <h3>Datum</h3>
-                    <h5>2020-10-12  |   14:30-16:00</h5>
-                    <h5>2020-10-18  |   14:30-16:00</h5>
-                    <h5>2020-10-19  |   14:30-16:00</h5>
-                    <h5>2020-10-20  |   14:30-16:00</h5>
-                    <h5>2020-10-25  |   14:30-16:00</h5>
-                    <h5>2020-10-26  |   14:30-16:00</h5>
-                </div>
-                <div id="the-local">
-                    <h3>Lokal</h3>
-                    <h5>Studio</h5>
-                    <h5>Dans studio</h5>
-                    <h5>Mediarum</h5>
-                    <h5>Projekt rummet</h5>
-                    <h5>Teatern</h5>
-                    <h5>Sporthallen</h5>
-                </div>
+        <div id="the-additional-form">
+            <h2>Lägga till användare</h2>
+            <div id="the-form">
+                <form id="form" action="#">
+                    <div id="name-input">
+                        <input type="text" name="name" autocomplete="off" required/>
+                        <label for="name" id="label-name">
+                            <span id="content-name">Name</span>
+                        </label>
+                    </div>
+                    <div id="email-input">
+                        <input type="email" name="email" autocomplete="off" required/>
+                        <label for="email" id="label-email">
+                            <span id="content-email">Email</span>
+                        </label>
+                        </div>
+                    <div id="usernumber-input">
+                        <input type="text" name="usernumber" autocomplete="off" required/>
+                        <label for="usernumber" id="label-usernumber">
+                            <span id="content-usernumber">Kortsnummer</span>
+                        </label>
+                    </div>
+                    <div id="button">
+                            <button type="button">
+                                Lägga till
+                            </button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

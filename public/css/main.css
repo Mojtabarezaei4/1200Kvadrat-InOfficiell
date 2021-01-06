@@ -1162,6 +1162,153 @@ header .navigation li a {
   margin-bottom: 10px;
 }
 
+#the-additional-form {
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 8%;
+}
+
+#the-additional-form h2 {
+  margin-left: 0;
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+#the-additional-form #form {
+  width: 70%;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+#the-additional-form #form #name-input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#the-additional-form #form #email-input {
+  margin-bottom: 20px;
+}
+
+#the-additional-form #form #usernumber-input {
+  margin-bottom: 20px;
+}
+
+#the-additional-form #form input {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 12px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+#the-additional-form #form label {
+  position: relative;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 3px solid black;
+}
+
+#the-additional-form #form label::after {
+  content: "";
+  position: relative;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #eb8347;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+#the-additional-form #form #content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#the-additional-form #form #content-email {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#the-additional-form #form #content-usernumber {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#the-additional-form #form input:focus + #label-name #content-name,
+#the-additional-form #form input:valid + #label-name #content-name {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 16px;
+  color: #eb8347;
+}
+
+#the-additional-form #form input:focus + #label-name::after,
+#the-additional-form #form input:valid + #label-name::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+#the-additional-form #form input:focus + #label-email #content-email,
+#the-additional-form #form input:valid + #label-email #content-email {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 16px;
+  color: #eb8347;
+}
+
+#the-additional-form #form input:focus + #label-email::after,
+#the-additional-form #form input:valid + #label-email::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+#the-additional-form #form input:focus + #label-usernumber #content-usernumber,
+#the-additional-form #form input:valid + #label-usernumber #content-usernumber {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 16px;
+  color: #eb8347;
+}
+
+#the-additional-form #form input:focus + #label-usernumber::after,
+#the-additional-form #form input:valid + #label-usernumber::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
 #log-in {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1314,6 +1461,12 @@ header .navigation li a {
 #log-in #the-login #login input:valid + #label-password::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+#log-in #login-as-personal {
+  width: 50%;
+  text-align: center;
+  margin: auto;
 }
 
 #rules {
