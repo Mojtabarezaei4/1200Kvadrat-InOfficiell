@@ -1348,7 +1348,11 @@ header .navigation li a {
   margin-bottom: 20px;
 }
 
-#the-additional-form #form #usernumber-input {
+#the-additional-form #form #userNumber-input {
+  margin-bottom: 20px;
+}
+
+#the-additional-form #form #password-input {
   margin-bottom: 20px;
 }
 
@@ -1405,7 +1409,15 @@ header .navigation li a {
   transition: all 0.3s ease;
 }
 
-#the-additional-form #form #content-usernumber {
+#the-additional-form #form #content-userNumber {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#the-additional-form #form #content-password {
   position: absolute;
   bottom: 5px;
   left: 0px;
@@ -1441,16 +1453,30 @@ header .navigation li a {
           transform: translateX(0%);
 }
 
-#the-additional-form #form input:focus + #label-usernumber #content-usernumber,
-#the-additional-form #form input:valid + #label-usernumber #content-usernumber {
+#the-additional-form #form input:focus + #label-userNumber #content-userNumber,
+#the-additional-form #form input:valid + #label-userNumber #content-userNumber {
   -webkit-transform: translateY(-150%);
           transform: translateY(-150%);
   font-size: 16px;
   color: #eb8347;
 }
 
-#the-additional-form #form input:focus + #label-usernumber::after,
-#the-additional-form #form input:valid + #label-usernumber::after {
+#the-additional-form #form input:focus + #label-userNumber::after,
+#the-additional-form #form input:valid + #label-userNumber::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+#the-additional-form #form input:focus + #label-password #content-password,
+#the-additional-form #form input:valid + #label-password #content-password {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 16px;
+  color: #eb8347;
+}
+
+#the-additional-form #form input:focus + #label-password::after,
+#the-additional-form #form input:valid + #label-password::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -1519,7 +1545,7 @@ header .navigation li a {
   overflow: hidden;
 }
 
-#log-in #the-login #login #username-input {
+#log-in #the-login #login #userNumber-input {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1565,7 +1591,7 @@ header .navigation li a {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-#log-in #the-login #login #content-username {
+#log-in #the-login #login #content-userNumber {
   position: absolute;
   bottom: 5px;
   left: 0px;
@@ -1581,16 +1607,16 @@ header .navigation li a {
   transition: all 0.3s ease;
 }
 
-#log-in #the-login #login input:focus + #label-username #content-username,
-#log-in #the-login #login input:valid + #label-username #content-username {
+#log-in #the-login #login input:focus + #label-userNumber #content-userNumber,
+#log-in #the-login #login input:valid + #label-userNumber #content-userNumber {
   -webkit-transform: translateY(-150%);
           transform: translateY(-150%);
   font-size: 16px;
   color: #eb8347;
 }
 
-#log-in #the-login #login input:focus + #label-username::after,
-#log-in #the-login #login input:valid + #label-username::after {
+#log-in #the-login #login input:focus + #label-userNumber::after,
+#log-in #the-login #login input:valid + #label-userNumber::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }

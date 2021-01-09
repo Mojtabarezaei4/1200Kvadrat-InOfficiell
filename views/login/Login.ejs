@@ -32,11 +32,11 @@
             </div>
             <div id="the-login-section">
                 <div id="the-login">
-                    <form id="login" action="#">
-                        <div id="username-input">
-                            <input type="text" name="username" autocomplete="off" required/>
-                            <label for="username" id="label-username">
-                                <span id="content-username">Kortsnummer</span>
+                    <form id="login" action="/loggain" method="POST"> 
+                        <div id="userNumber-input">
+                            <input type="text" name="userNumber" autocomplete="off" required/>
+                            <label for="userNumber" id="label-userNumber">
+                                <span id="content-userNumber">Kortsnummer</span>
                             </label>
                         </div>
                         <div id="password-input">
@@ -45,17 +45,18 @@
                                 <span id="content-password">Lössenord</span>
                             </label>
                         </div>
+                        <div id="navigaion-buttons">
+                            <button type="submit">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    logga in
+                            </button>
+                        </div>
                     </form>
                 </div>
-                <div id="navigaion-buttons">
-                    <button type="submit">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            logga in
-                    </button>
-                </div>
+                
             </div>
             <div id="login-as-personal"><div id="navigaion-buttons">
                 <a id="personal-login-link" href="/loggain/loggainsompersonal">

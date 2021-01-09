@@ -15,13 +15,14 @@ const profilRouter = require('./routes/profil')
 const loggaInRouter = require('./routes/logga-in')
 
 // Database connection
-const mongoose = require('mongoose')
-mongoose.connect(process.env.DATABASE_URL, {
-    useNewUrlParser: true
-})
-const db = mongoose.connection
-db.on('error', error => console.error(error))
-db.once('open', () => console.log('Connected to Moongose'))
+// const mongoose = require('mongoose')
+// mongoose.connect(process.env.DATABASE_URL, {
+    // useNewUrlParser: true
+// })
+// const db = mongoose.connection
+// db.on('error', error => console.error(error))
+// db.once('open', () => console.log('Connected to Moongose'))
+const dbModule = require('./models/dbModule')
 
 app.use(express.json())
 app.use(express.urlencoded())

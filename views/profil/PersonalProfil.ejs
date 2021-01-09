@@ -51,7 +51,7 @@
         <div id="the-additional-form">
             <h2>Lägga till användare</h2>
             <div id="the-form">
-                <form id="form" action="#">
+                <form id="form" action="/profil" method="POST">
                     <div id="name-input">
                         <input type="text" name="name" autocomplete="off" required/>
                         <label for="name" id="label-name">
@@ -64,10 +64,16 @@
                             <span id="content-email">Email</span>
                         </label>
                         </div>
-                    <div id="usernumber-input">
-                        <input type="text" name="usernumber" autocomplete="off" required/>
-                        <label for="usernumber" id="label-usernumber">
-                            <span id="content-usernumber">Kortsnummer</span>
+                    <div id="userNumber-input">
+                        <input type="text" name="userNumber" autocomplete="off" required/>
+                        <label for="userNumber" id="label-userNumber">
+                            <span id="content-userNumber">Kortsnummer</span>
+                        </label>
+                    </div>
+                    <div id="password-input">
+                        <input type="password" name="password" autocomplete="off" required/>
+                        <label for="password" id="label-password">
+                            <span id="content-password">Lössenord</span>
                         </label>
                     </div>
                     <div id="button">

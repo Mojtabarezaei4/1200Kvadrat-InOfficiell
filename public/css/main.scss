@@ -652,7 +652,10 @@ header{
         #email-input{
             margin-bottom: 20px;
         }
-        #usernumber-input{
+        #userNumber-input{
+            margin-bottom: 20px;
+        }
+        #password-input{
             margin-bottom: 20px;
         }
         input{
@@ -670,7 +673,10 @@ header{
         #content-email{
             @include content();
         }
-        #content-usernumber{
+        #content-userNumber{
+            @include content();
+        }
+        #content-password{
             @include content();
         }
         // For the name-input
@@ -695,15 +701,26 @@ header{
         input:valid + #label-email::after{
             transform: translateX(0%);
         }
-        // For the message-input
-        input:focus + #label-usernumber #content-usernumber, 
-        input:valid + #label-usernumber #content-usernumber{
+        // For the usernumber-input
+        input:focus + #label-userNumber #content-userNumber, 
+        input:valid + #label-userNumber #content-userNumber{
             transform: translateY(-150%);
             font-size: 16px;
             color: $linksColor;
         }
-        input:focus + #label-usernumber::after, 
-        input:valid + #label-usernumber::after{
+        input:focus + #label-userNumber::after, 
+        input:valid + #label-userNumber::after{
+            transform: translateX(0%);
+        }
+        // For the password-input
+        input:focus + #label-password #content-password, 
+        input:valid + #label-password #content-password{
+            transform: translateY(-150%);
+            font-size: 16px;
+            color: $linksColor;
+        }
+        input:focus + #label-password::after, 
+        input:valid + #label-password::after{
             transform: translateX(0%);
         }
     }
@@ -743,7 +760,7 @@ header{
             flex-direction: column;
             margin: auto;
             overflow: hidden;
-            #username-input{
+            #userNumber-input{
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
@@ -759,21 +776,21 @@ header{
             label::after{
                 @include labelAfter();
             }
-            #content-username{
+            #content-userNumber{
                 @include content();
             }
             #content-password{
                 @include content();
             }
             // For the username-input
-            input:focus + #label-username #content-username, 
-            input:valid + #label-username #content-username{
+            input:focus + #label-userNumber #content-userNumber, 
+            input:valid + #label-userNumber #content-userNumber{
                 transform: translateY(-150%);
                 font-size: 16px;
                 color: $linksColor;
             }
-            input:focus + #label-username::after, 
-            input:valid + #label-username::after{
+            input:focus + #label-userNumber::after, 
+            input:valid + #label-userNumber::after{
                 transform: translateX(0%);
             }
             // For the password-input
