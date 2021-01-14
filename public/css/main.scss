@@ -770,6 +770,14 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
+    #error-message{
+        text-align: center;
+        margin: auto;
+        h2{
+            margin-top: 2rem;
+            color: rgba(255, 0, 0, 0.678);
+        }
+    }
     #the-text{
         top: 0;
         margin: auto;

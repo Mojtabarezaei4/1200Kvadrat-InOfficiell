@@ -27,6 +27,11 @@
     </header>
     <section class="container">
         <div id="log-in">
+            <div id="error-message">
+                <% if (message != "" ) { %>
+                    <h2> <%- message %>  </h2>
+                <% } %>
+            </div>
             <div id="the-text">
                 <h1>Logga in</h1>
             </div>

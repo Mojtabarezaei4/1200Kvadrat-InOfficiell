@@ -5,10 +5,14 @@ const addMember = require('../models/memberAdditionModule')
 
 const bcrypt = require('bcrypt')
 
+let message = ""
+
+
 router.get('/', (req, res) => {
-    res.render('login/Login')
+    res.render('login/Login', {message: message})
 })
 router.post('/', async (req, res) => {
+
     try{
         const user = await addMember.getOneMember(req.body.userNumber)
         console.log(user)
@@ -19,7 +23,7 @@ router.post('/', async (req, res) => {
         }
     }    
     else {
-        console.log("Faild!")
+        res.render('login/Login', {message: "Kortsnummer eller lösenordet var fel eller existerar inte."})
     }
     }catch{
         res.status(500).send("Something wrong")

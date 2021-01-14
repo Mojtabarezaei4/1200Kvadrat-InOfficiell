@@ -6,15 +6,15 @@ const addMember = require('../models/memberAdditionModule')
 
 const bcrypt = require('bcrypt')
 
-var name = "John"
+var name = ""
 
 router.get('/', (req, res) => {
-    // if(name == null || name == ""){
-        //res.render('login/login')
-    //}
-    //else{
+    if(name == null || name == ""){
+        res.render('login/login')
+    }
+    else{
         res.render('profil/Profil', {name : name})
-    //}
+    }
 })
 
 router.post('/', async (req, res) => {

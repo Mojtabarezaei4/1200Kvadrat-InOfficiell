@@ -1548,6 +1548,16 @@ header .navigation li a {
   width: 100%;
 }
 
+#log-in #error-message {
+  text-align: center;
+  margin: auto;
+}
+
+#log-in #error-message h2 {
+  margin-top: 2rem;
+  color: rgba(255, 0, 0, 0.678);
+}
+
 #log-in #the-text {
   top: 0;
   margin: auto;
