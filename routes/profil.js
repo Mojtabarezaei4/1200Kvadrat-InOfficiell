@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
         //res.render('login/login')
     //}
     //else{
-        res.render('profil/PersonalProfil', {name : name})
+        res.render('profil/Profil', {name : name})
     //}
 })
 

@@ -895,6 +895,62 @@ header .navigation li a {
   margin-bottom: 2rem;
 }
 
+#information #the-image-part {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#information .card {
+  width: 50%;
+  height: 50%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  margin: auto;
+}
+
+#information .card img {
+  width: 100%;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+#information .card .face {
+  position: absolute;
+  background-color: transparent;
+  margin: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#information .card:hover .face.front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#information .card .face.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#information .card:hover .face.back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
 #information #the-text {
   top: 0;
   margin: auto;

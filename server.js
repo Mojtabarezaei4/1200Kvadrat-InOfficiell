@@ -30,9 +30,6 @@ app.use(express.urlencoded())
 //Static Files
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
-app.use('/css', express.static(__dirname + 'public/css'))
-app.use('/logos', express.static(__dirname + 'public/logos'))
-app.use('/photos', express.static(__dirname + 'public/photos'))
 app.use(express.static('public'))
 
 // Routes
