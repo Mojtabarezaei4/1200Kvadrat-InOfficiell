@@ -28,7 +28,7 @@
     <section class="container">
         <div id="log-in">
             <div id="error-message">
-                <% if (message != "" ) { %>
+                <% if(message != "") { %>
                     <h2> <%- message %>  </h2>
                 <% } %>
             </div>
@@ -50,18 +50,17 @@
                                 <span id="content-password">Lössenord</span>
                             </label>
                         </div>
-                        <div id="navigaion-buttons">
-                            <button type="submit">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    logga in
-                            </button>
-                        </div>
                     </form>
                 </div>
-                
+                <div id="navigaion-buttons">
+                    <button type="submit">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        logga in
+                    </button>
+                </div>
             </div>
             <div id="login-as-personal"><div id="navigaion-buttons">
                 <a id="personal-login-link" href="/loggain/loggainsompersonal">

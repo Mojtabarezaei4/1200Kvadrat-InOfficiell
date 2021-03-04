@@ -812,6 +812,10 @@ header{
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
+            #email-input{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
             #password-input{
                 margin-bottom: 20px;
             }
@@ -827,6 +831,9 @@ header{
             #content-userNumber{
                 @include content();
             }
+            #content-email{
+                @include content();
+            }
             #content-password{
                 @include content();
             }
@@ -839,6 +846,17 @@ header{
             }
             input:focus + #label-userNumber::after, 
             input:valid + #label-userNumber::after{
+                transform: translateX(0%);
+            }
+            // For the email-input
+            input:focus + #label-email #content-email, 
+            input:valid + #label-email #content-email{
+                transform: translateY(-150%);
+                font-size: 16px;
+                color: $linksColor;
+            }
+            input:focus + #label-email::after, 
+            input:valid + #label-email::after{
                 transform: translateX(0%);
             }
             // For the password-input
@@ -862,6 +880,17 @@ header{
             font-size: 12px;
         }
         #personal-login-link:hover{
+            background-color: transparent;
+        }
+    }
+    #login-as-member{
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        #member-login-link{
+            font-size: 12px;
+        }
+        #member-login-link:hover{
             background-color: transparent;
         }
     }

@@ -1616,6 +1616,11 @@ header .navigation li a {
   margin-bottom: 20px;
 }
 
+#log-in #the-login #login #email-input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #log-in #the-login #login #password-input {
   margin-bottom: 20px;
 }
@@ -1665,6 +1670,14 @@ header .navigation li a {
   transition: all 0.3s ease;
 }
 
+#log-in #the-login #login #content-email {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 #log-in #the-login #login #content-password {
   position: absolute;
   bottom: 5px;
@@ -1683,6 +1696,20 @@ header .navigation li a {
 
 #log-in #the-login #login input:focus + #label-userNumber::after,
 #log-in #the-login #login input:valid + #label-userNumber::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+#log-in #the-login #login input:focus + #label-email #content-email,
+#log-in #the-login #login input:valid + #label-email #content-email {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 16px;
+  color: #eb8347;
+}
+
+#log-in #the-login #login input:focus + #label-email::after,
+#log-in #the-login #login input:valid + #label-email::after {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -1712,6 +1739,20 @@ header .navigation li a {
 }
 
 #log-in #login-as-personal #personal-login-link:hover {
+  background-color: transparent;
+}
+
+#log-in #login-as-member {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+#log-in #login-as-member #member-login-link {
+  font-size: 12px;
+}
+
+#log-in #login-as-member #member-login-link:hover {
   background-color: transparent;
 }
 

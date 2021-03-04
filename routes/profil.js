@@ -10,7 +10,8 @@ var name = ""
 
 router.get('/', (req, res) => {
     if(name == null || name == ""){
-        res.render('login/login')
+        res.redirect('/loggain')
+
     }
     else{
         res.render('profil/Profil', {name : name})
